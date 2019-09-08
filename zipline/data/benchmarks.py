@@ -36,7 +36,7 @@ def get_benchmark_returns(symbol):
         #'https://api.iextrading.com/1.0/stock/{}/chart/5y'.format(symbol)
         'https://cloud.iexapis.com/stable/stock/{}/chart/5y?token={}'.format(symbol, IEX_TOKEN)
     )
-    data = json.loads(r.text)
+    data = json.loads(r)
 
     df = pd.DataFrame(data)
 
