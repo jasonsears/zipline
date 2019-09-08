@@ -28,6 +28,7 @@ _default_calendar_aliases = {
     'SMART': 'NYSE',
     'ARCA': 'NYSE',
     'NASDAQ': 'NYSE',
+    'XNYS': 'NYSE',
     'BATS': 'NYSE',
     'CBOT': 'CME',
     'COMEX': 'CME',
