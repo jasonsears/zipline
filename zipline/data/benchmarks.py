@@ -32,8 +32,6 @@ def get_benchmark_returns(symbol):
     get up to 5 years worth of data.
     """
     IEX_TOKEN = os.environ.get('IEX_PUBLIC_TOKEN')
-    print(IEX_TOKEN)
-    print(symbol)
     r = requests.get(
         'https://cloud.iexapis.com/stable/stock/{}/chart/5y?token={}'.format(symbol, IEX_TOKEN)
     )
