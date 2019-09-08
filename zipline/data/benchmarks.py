@@ -34,7 +34,7 @@ def get_benchmark_returns(symbol):
     IEX_TOKEN=os.environ["IEX_PUBLIC_TOKEN"]
     r = requests.get(
         #'https://api.iextrading.com/1.0/stock/{}/chart/5y'.format(symbol)
-        'https://cloud.iexapis.com/stable/stock/{}/chart/5y?token={}'.format(symbol, IEX_TOKEN) )
+        'https://cloud.iexapis.com/stable/stock/{}/chart/5y?token={}'.format(symbol, IEX_TOKEN)
     )
     data = json.loads(r.text)
 
